@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <!-- Sem JS a abertura não aparece e a página continua utilizável -->
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Specter & Associates · Attorneys at law</title>
+  <meta name="description" content="Specter & Associates: direito corporativo, fusões e aquisições em Manhattan. Projeto conceitual inspirado na série Suits.">
+  <meta name="theme-color" content="#0B0B0C">
+
+  <!-- Compartilhamento (Open Graph) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Specter & Associates · Attorneys at law">
+  <meta property="og:description" content="Quando eu entro na sala, o acordo já está fechado.">
+  <meta property="og:image" content="assets/hero-skyline-1080-poster.jpg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@300..600&family=Mrs+Saint+Delafield&display=swap">
+
+  <link rel="preload" as="image" href="assets/hero-skyline-1080-poster.jpg">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <!-- ==================================================================
+       ABERTURA — martelo bate e a cortina se abre
+       ================================================================== -->
+  <div class="intro" id="intro">
+    <div class="intro__curtain intro__curtain--left" aria-hidden="true"></div>
+    <div class="intro__curtain intro__curtain--right" aria-hidden="true"></div>
+    <div class="intro__stage" aria-hidden="true">
+      <div class="intro__gavel" data-gavel></div>
+    </div>
+    <button class="intro__skip mono" type="button">Pular abertura</button>
+  </div>
+
+  <!-- ==================================================================
+       NAVEGAÇÃO
+       ================================================================== -->
+  <nav class="nav" aria-label="Principal">
+    <div class="container nav__inner">
+      <a class="brand" href="#topo" aria-label="Specter & Associates, voltar ao topo">
+        <span class="brand__mark monogram">S<span>.</span></span>
+        <span class="brand__text">
+          <strong>Specter &amp; Associates</strong>
+          <small class="mono">Attorneys at law · NYC</small>
+        </span>
+      </a>
+
+      <ul class="nav__links">
+        <li><a href="#atuacao">Atuação</a></li>
+        <li><a href="#socio">O sócio</a></li>
+        <li><a href="#casos">Casos</a></li>
+        <li><a href="#bastidores">Bastidores</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <a class="btn btn--ghost nav__cta" href="#contato">Agendar consulta</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ================================================================
+         HERO
+         ================================================================ -->
+    <header class="hero" id="topo">
+      <div class="hero__media" aria-hidden="true">
+        <video class="hero__video" autoplay muted loop playsinline preload="auto"
+               poster="assets/hero-skyline-1080-poster.jpg">
+          <source src="assets/hero-skyline-1080.webm" type="video/webm">
+          <source src="assets/hero-skyline-1080.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <canvas class="hero__particles" aria-hidden="true"></canvas>
+      <picture class="hero__portrait" aria-hidden="true">
+        <source srcset="assets/harvey-hero.webp" type="image/webp">
+        <img src="assets/harvey-hero.png" alt="" width="302" height="674" fetchpriority="high">
+      </picture>
+
+      <div class="container hero__content">
+        <p class="eyebrow hero__eyebrow">Direito corporativo · Manhattan, NY</p>
+
+        <h1 class="hero__title title">
+          <span class="mask"><span class="mask__line">Quando eu entro</span></span>
+          <span class="mask"><span class="mask__line">na sala, o acordo</span></span>
+          <span class="mask"><span class="mask__line">já está <em>fechado.</em></span></span>
+        </h1>
+
+        <p class="hero__lead lead">
+          Advocacia corporativa para quem não pode perder. Fusões, contratos e
+          litígios de alto valor, conduzidos pessoalmente pelo sócio.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn" href="#contato">
+            Agendar consulta
+            <svg class="btn__arrow icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#casos">Ver casos</a>
+        </div>
+
+        <ul class="hero__meta mono">
+          <li>Desde 2004</li>
+          <li>1180 Madison Ave · NY</li>
+          <li>Atendimento 24/7</li>
+        </ul>
+      </div>
+
+      <a class="hero__scroll mono" href="#numeros" aria-label="Rolar para os números">
+        <span>Role</span>
+        <i aria-hidden="true"></i>
+      </a>
+    </header>
+
+    <!-- ================================================================
+         NÚMEROS — cards de vidro sobre o fim do hero
+         ================================================================ -->
+    <section class="stats" id="numeros" aria-label="Números do escritório">
+      <div class="container">
+        <ul class="stats__grid">
+          <li class="stat glass" data-reveal>
+            <p class="stat__value"><span data-count="17">17</span></p>
+            <p class="stat__label mono">Anos de prática</p>
+          </li>
+          <li class="stat glass" data-reveal>
+            <p class="stat__value"><small>US$</small> <span data-count="4.2" data-dec="1">4,2</span><small> bi</small></p>
+            <p class="stat__label mono">Em fusões e aquisições</p>
+          </li>
+          <li class="stat glass" data-reveal>
+            <p class="stat__value"><span data-count="312">312</span></p>
+            <p class="stat__label mono">Acordos fechados</p>
+          </li>
+          <li class="stat stat--highlight glass" data-reveal>
+            <p class="stat__value"><span data-count="0" data-from="12">0</span></p>
+            <p class="stat__label mono">Casos perdidos</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         ÁREAS DE ATUAÇÃO
+         ================================================================ -->
+    <section class="section practice" id="atuacao">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Áreas de atuação</p>
+          <h2 class="title" data-reveal>Onde o seu negócio <em>não pode</em> perder.</h2>
+          <p class="lead" data-reveal>
+            Quatro frentes, um único padrão: preparar cada caso como se ele
+            fosse a julgamento amanhã.
+          </p>
+        </div>
+
+        <ul class="practice__grid">
+          <li class="card line-hover" data-reveal>
+            <svg class="icon card__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M6 28V8l10-4 10 4v20M3 28h26M11 12h2M19 12h2M11 17h2M19 17h2M14 28v-5h4v5"/></svg>
+            <p class="card__code mono">§ 01</p>
+            <h3 class="card__title">Direito Corporativo</h3>
+            <p class="card__text">Estrutura societária, governança e conselho. Blindagem antes que alguém precise de defesa.</p>
+            <ul class="card__list">
+              <li>Governança e compliance</li>
+              <li>Acordos de acionistas</li>
+            </ul>
+          </li>
+
+          <li class="card line-hover" data-reveal>
+            <svg class="icon card__icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="12" cy="16" r="8"/><circle cx="20" cy="16" r="8"/></svg>
+            <p class="card__code mono">§ 02</p>
+            <h3 class="card__title">Fusões e Aquisições</h3>
+            <p class="card__text">Da due diligence ao fechamento. Negociamos o preço, os termos e o que ninguém viu na mesa.</p>
+            <ul class="card__list">
+              <li>Due diligence</li>
+              <li>Defesa contra aquisição hostil</li>
+            </ul>
+          </li>
+
+          <li class="card line-hover" data-reveal>
+            <svg class="icon card__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4h11l5 5v19H8zM19 4v5h5M12 15h8M12 19h8M12 23h5"/></svg>
+            <p class="card__code mono">§ 03</p>
+            <h3 class="card__title">Contratos de Alto Valor</h3>
+            <p class="card__text">Cada cláusula escrita para o pior dia. Quando ele chega, o contrato já ganhou a discussão.</p>
+            <ul class="card__list">
+              <li>Contratos internacionais</li>
+              <li>Renegociação e rescisão</li>
+            </ul>
+          </li>
+
+          <li class="card line-hover" data-reveal>
+            <svg class="icon card__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5v22M10 27h12M6 9h20M3 18l3-9 3 9M3 18a3 3 0 0 0 6 0M23 18l3-9 3 9M23 18a3 3 0 0 0 6 0"/></svg>
+            <p class="card__code mono">§ 04</p>
+            <h3 class="card__title">Litígio Estratégico</h3>
+            <p class="card__text">Tribunal é o último recurso, nunca o primeiro. Mas, se chegar lá, chegamos preparados.</p>
+            <ul class="card__list">
+              <li>Disputas societárias</li>
+              <li>Arbitragem internacional</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         POR QUE NOS ESCOLHER — seção clara
+         ================================================================ -->
+    <section class="section reasons" id="diferenciais">
+      <div class="container reasons__inner">
+        <div class="reasons__head">
+          <p class="eyebrow" data-reveal>Por que nos escolher</p>
+          <h2 class="title" data-reveal>Quatro razões para nos ter <em>do seu lado.</em></h2>
+          <p class="lead" data-reveal>
+            Escritórios grandes vendem estrutura. Nós vendemos resultado,
+            e o sócio responde por ele.
+          </p>
+        </div>
+
+        <ol class="reasons__list">
+          <li class="reason" data-reveal>
+            <svg class="icon reason__icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="14" width="18" height="13" rx="1"/><path d="M11 14v-4a5 5 0 0 1 10 0v4M16 19v3"/></svg>
+            <div>
+              <h3 class="reason__title">Sigilo absoluto</h3>
+              <p class="reason__text">O que é dito aqui não sai daqui. Nem para a imprensa, nem para a outra parte.</p>
+            </div>
+          </li>
+          <li class="reason" data-reveal>
+            <svg class="icon reason__icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="11" r="5"/><path d="M6 27c1.5-5 5.5-8 10-8s8.5 3 10 8"/></svg>
+            <div>
+              <h3 class="reason__title">Sócio no comando</h3>
+              <p class="reason__text">Seu caso não é repassado a um associado. Quem negocia é quem assina.</p>
+            </div>
+          </li>
+          <li class="reason" data-reveal>
+            <svg class="icon reason__icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11"/><path d="M16 10v6l4 3"/></svg>
+            <div>
+              <h3 class="reason__title">Disponível 24/7</h3>
+              <p class="reason__text">Crises não esperam o horário comercial. Nossa linha também não.</p>
+            </div>
+          </li>
+          <li class="reason" data-reveal>
+            <svg class="icon reason__icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="6"/><circle cx="16" cy="16" r="1.5"/></svg>
+            <div>
+              <h3 class="reason__title">Estratégia antes do tribunal</h3>
+              <p class="reason__text">Antecipamos o próximo movimento do adversário. Na maioria das vezes, o caso termina antes de começar.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         O SÓCIO
+         ================================================================ -->
+    <section class="section section--alt partner" id="socio">
+      <p class="partner__watermark monogram" aria-hidden="true">S<span>.</span></p>
+
+      <div class="container partner__inner">
+        <figure class="partner__figure" data-reveal>
+          <div class="partner__frame" aria-hidden="true"></div>
+          <div class="partner__photo photo">
+            <img src="assets/harvey-terno-risca.jpg" alt="Harvey Specter de terno risca de giz, ajustando a abotoadura em frente a um painel de madeira" width="640" height="948" loading="lazy">
+          </div>
+          <blockquote class="partner__quote quote glass">
+            <p>“Eu não aceito casos para participar. Aceito casos <em>para vencer.</em>”</p>
+          </blockquote>
+        </figure>
+
+        <div class="partner__body">
+          <p class="eyebrow" data-reveal>O sócio</p>
+          <h2 class="title" data-reveal>Harvey <em>Specter</em></h2>
+          <p class="partner__role mono" data-reveal>Sócio-fundador · Senior Partner</p>
+
+          <div class="partner__bio" data-reveal>
+            <p>
+              Formado em Harvard, começou na Promotoria de Nova York, onde aprendeu
+              a ler um adversário antes de ler o processo.
+            </p>
+            <p>
+              Há mais de quinze anos representa conselhos, fundos e famílias que
+              não podem se dar ao luxo de um segundo lugar. Ele não promete o
+              impossível. Só entrega o que prometeu.
+            </p>
+          </div>
+
+          <ul class="partner__creds" data-reveal>
+            <li><span class="mono">Formação</span>Harvard Law School</li>
+            <li><span class="mono">Licença</span>New York State Bar</li>
+            <li><span class="mono">Origem</span>Promotoria de NY</li>
+          </ul>
+
+          <svg class="signature" viewBox="0 0 420 120" role="img" aria-label="Assinatura de Harvey Specter">
+            <text x="6" y="88">Harvey Specter</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         CASOS EMBLEMÁTICOS
+         ================================================================ -->
+    <section class="section cases" id="casos">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Casos emblemáticos</p>
+          <h2 class="title" data-reveal>Processos que viraram <em>precedente.</em></h2>
+          <p class="lead" data-reveal>
+            Uma amostra do que fazemos quando o valor em jogo tem nove dígitos
+            e o prazo é para ontem.
+          </p>
+        </div>
+
+        <ol class="cases__list">
+          <li class="case line-hover" data-reveal>
+            <p class="case__number mono">Proc. nº 19-CV-04417</p>
+            <div class="case__parties">
+              <h3>Meridian Holdings <span>×</span> Atlas Capital</h3>
+              <p class="mono">Defesa contra aquisição hostil</p>
+            </div>
+            <p class="case__summary">Oferta hostil de US$ 1,8 bi revertida em 11 dias. A fusão foi fechada nos termos do nosso cliente.</p>
+            <p class="case__result"><span class="mono">Resultado</span>Acordo favorável</p>
+          </li>
+
+          <li class="case line-hover" data-reveal>
+            <p class="case__number mono">Proc. nº 21-CV-11082</p>
+            <div class="case__parties">
+              <h3>Halvorsen Pharma</h3>
+              <p class="mono">Litígio de patentes</p>
+            </div>
+            <p class="case__summary">Ação de US$ 600 mi por violação de patente. Encerrada antes do julgamento, sem nenhum pagamento.</p>
+            <p class="case__result"><span class="mono">Resultado</span>Ação arquivada</p>
+          </li>
+
+          <li class="case line-hover" data-reveal>
+            <p class="case__number mono">Proc. nº 23-CV-02951</p>
+            <div class="case__parties">
+              <h3>Northgate Realty</h3>
+              <p class="mono">Contrato imobiliário</p>
+            </div>
+            <p class="case__summary">Rescisão de um contrato de 40 anos em Midtown. A multa foi revertida a favor do cliente.</p>
+            <p class="case__result"><span class="mono">Resultado</span>US$ 240 mi recuperados</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         NOS BASTIDORES — galeria duotone
+         ================================================================ -->
+    <section class="section section--alt backstage" id="bastidores">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Nos bastidores</p>
+          <h2 class="title" data-reveal>O trabalho que <em>ninguém</em> vê.</h2>
+          <p class="lead" data-reveal>
+            Antes de cada assinatura existem noites longas, poucas palavras e
+            uma vista de Manhattan que nunca apaga.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--wide photo" tabindex="0" data-reveal>
+            <img src="assets/harvey-bola.jpg" alt="Harvey sentado no escritório, sorrindo de canto e segurando uma bola de beisebol" width="1200" height="796" loading="lazy">
+            <figcaption class="mono"><span>Cena 01</span>Confiança</figcaption>
+          </figure>
+          <figure class="gallery__item photo" tabindex="0" data-reveal>
+            <img src="assets/harvey-olhar.jpg" alt="Harvey de terno escuro, olhando de lado com expressão séria" width="1009" height="1025" loading="lazy">
+            <figcaption class="mono"><span>Cena 02</span>Leitura</figcaption>
+          </figure>
+          <figure class="gallery__item photo" tabindex="0" data-reveal>
+            <img src="assets/janela.jpg" alt="Silhueta de um homem de terno diante de uma janela com a cidade iluminada à noite" width="687" height="1030" loading="lazy">
+            <figcaption class="mono"><span>Cena 03</span>Estratégia</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         FRASE DE IMPACTO
+         ================================================================ -->
+    <section class="verdict" aria-label="Frase de impacto">
+      <div class="verdict__bg" aria-hidden="true">
+        <img src="assets/hero-skyline-1080-poster.jpg" alt="" loading="lazy">
+      </div>
+      <div class="container verdict__inner">
+        <p class="verdict__quote quote" data-reveal>Vencer não é <em>sorte.</em><br>É método.</p>
+        <p class="verdict__author mono" data-reveal>Harvey Specter · Senior Partner</p>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         CONTATO
+         ================================================================ -->
+    <section class="section contact" id="contato">
+      <div class="container contact__inner">
+        <div class="contact__info">
+          <p class="eyebrow" data-reveal>Contato</p>
+          <h2 class="title" data-reveal>Conte o caso. <em>Nós decidimos</em> o próximo passo.</h2>
+          <p class="lead" data-reveal>
+            Resposta em até duas horas, todos os dias. Toda conversa é
+            protegida por sigilo desde a primeira mensagem.
+          </p>
+
+          <ul class="channels" data-reveal>
+            <li>
+              <svg class="icon icon--sm" viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4h5l2 7-3 2a16 16 0 0 0 7 7l2-3 7 2v5a3 3 0 0 1-3 3A22 22 0 0 1 5 7a3 3 0 0 1 3-3z"/></svg>
+              <span><small class="mono">Telefone</small><a href="tel:+12125550142">+1 (212) 555-0142</a></span>
+            </li>
+            <li>
+              <svg class="icon icon--sm" viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="7" width="24" height="18" rx="1"/><path d="M4 8l12 9 12-9"/></svg>
+              <span><small class="mono">E-mail</small><a href="mailto:contato@specter-associates.example">contato@specter-associates.example</a></span>
+            </li>
+            <li>
+              <svg class="icon icon--sm" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 27l1.6-5.2A11 11 0 1 1 10.4 25.6z"/></svg>
+              <span><small class="mono">WhatsApp</small><a href="https://wa.me/558391667053" target="_blank" rel="noopener">+55 83 9166-7053</a></span>
+            </li>
+            <li>
+              <svg class="icon icon--sm" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 29s9-8.5 9-15a9 9 0 0 0-18 0c0 6.5 9 15 9 15z"/><circle cx="16" cy="14" r="3"/></svg>
+              <span><small class="mono">Endereço</small>1180 Madison Ave, 42º andar · New York, NY</span>
+            </li>
+          </ul>
+
+          <div class="contact__gavel" data-gavel aria-hidden="true"></div>
+        </div>
+
+        <form class="form glass" id="contact-form" novalidate data-reveal>
+          <p class="form__title">Solicitar consulta</p>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="f-name">Nome</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-company">Empresa</label>
+              <input id="f-company" name="company" type="text" autocomplete="organization">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-email">E-mail</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+
+          <div class="field field--select">
+            <label for="f-area">Área</label>
+            <select id="f-area" name="area" required>
+              <option value="" selected disabled>Selecione</option>
+              <option>Direito Corporativo</option>
+              <option>Fusões e Aquisições</option>
+              <option>Contratos de Alto Valor</option>
+              <option>Litígio Estratégico</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="f-message">Resumo do caso</label>
+            <textarea id="f-message" name="message" rows="4" required></textarea>
+          </div>
+
+          <button class="btn form__submit" type="submit">
+            Enviar com sigilo
+            <svg class="btn__arrow icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg>
+          </button>
+
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================================================================
+       RODAPÉ
+       ================================================================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="brand" href="#topo" aria-label="Voltar ao topo">
+        <span class="brand__mark monogram">S<span>.</span></span>
+        <span class="brand__text">
+          <strong>Specter &amp; Associates</strong>
+          <small class="mono">Attorneys at law · NYC</small>
+        </span>
+      </a>
+      <p class="footer__legal">
+        Projeto conceitual inspirado na série Suits. Escritório, casos e contatos fictícios.
+      </p>
+      <p class="footer__credit mono">Design &amp; código · <a href="https://instagram.com/joseandro.dev" target="_blank" rel="noopener">@joseandro.dev</a></p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante de WhatsApp -->
+  <a class="wa" href="https://wa.me/558391667053" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg class="icon icon--sm" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 27l1.6-5.2A11 11 0 1 1 10.4 25.6z"/><path d="M12 12c0 4 4 8 8 8"/></svg>
+    <span class="wa__label">Falar no WhatsApp</span>
+  </a>
+
+  <div class="cursor" aria-hidden="true">
+    <span class="cursor__ring"></span>
+    <span class="cursor__dot"></span>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Martelo: desenhado uma vez e clonado na abertura e no contato -->
+  <template id="gavel-template">
+    <div class="gavel">
+    <span class="gavel__flash"></span>
+    <svg class="gavel__svg" viewBox="0 0 260 200">
+      <g class="gavel__block">
+        <ellipse class="gavel__wood-dark" cx="110" cy="174" rx="80" ry="14"/>
+        <rect class="gavel__wood-dark" x="30" y="158" width="160" height="16"/>
+        <ellipse class="gavel__wood" cx="110" cy="158" rx="80" ry="14"/>
+        <ellipse class="gavel__inlay" cx="110" cy="158" rx="60" ry="9"/>
+      </g>
+      <g class="gavel__fx">
+        <ellipse class="gavel__wave" cx="104" cy="158" rx="44" ry="8"/>
+        <ellipse class="gavel__wave" cx="104" cy="158" rx="44" ry="8"/>
+        <g class="gavel__sparks" transform="translate(104 152)"></g>
+      </g>
+      <g class="gavel__hammer">
+        <rect class="gavel__wood" x="122" y="115" width="118" height="10" rx="5"/>
+        <circle class="gavel__wood-dark" cx="238" cy="120" r="8"/>
+        <rect class="gavel__gold" x="122" y="112" width="8" height="16" rx="1"/>
+        <rect class="gavel__wood" x="82" y="86" width="44" height="68" rx="6"/>
+        <rect class="gavel__wood-dark" x="78" y="84" width="52" height="10" rx="3"/>
+        <rect class="gavel__wood-dark" x="78" y="146" width="52" height="10" rx="3"/>
+        <rect class="gavel__gold" x="82" y="104" width="44" height="4"/>
+        <rect class="gavel__gold" x="82" y="132" width="44" height="4"/>
+        <rect class="gavel__shine" x="88" y="96" width="4" height="48" rx="2"/>
+      </g>
+    </svg>
+    </div>
+  </template>
+
+  <!-- Bibliotecas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+
+  <!-- Scripts do site (ordem importa: utils primeiro, main por último) -->
+  <script src="js/utils.js" defer></script>
+  <script src="js/gavel.js" defer></script>
+  <script src="js/intro.js" defer></script>
+  <script src="js/particles.js" defer></script>
+  <script src="js/cursor.js" defer></script>
+  <script src="js/scroll.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/form.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

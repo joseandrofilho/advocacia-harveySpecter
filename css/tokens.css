@@ -1,0 +1,90 @@
+/* ==========================================================================
+   TOKENS — única fonte de cores, fontes, espaçamentos e movimentos.
+   Regra do PRD: nenhuma cor ou fonte solta fora deste arquivo.
+   ========================================================================== */
+
+:root {
+  /* Cores ------------------------------------------------------------- */
+  --ink: #0b0b0c;
+  --ink-2: #141416;
+  --ink-deep: #000000;
+  --champ: #d4be8d;
+  --champ-hi: #eadbb5;
+  --champ-deep: #7a6338;
+  --wood: #3b2416;
+  --wood-dark: #24150c;
+  --paper: #f2eee6;
+  --smoke: #8c8a85;
+  --line: rgba(212, 190, 141, 0.18);
+  --cream: #f1ece2;
+  --on-cream: #16140f;
+  --on-cream-2: #5c564b;
+  --line-cream: rgba(22, 20, 15, 0.12);
+
+  --danger: #b86a62; /* erro de formulário, discreto */
+
+  /* Transparências derivadas (vidro, sombras, overlays) */
+  --glass: rgba(20, 20, 22, 0.55);
+  --glass-strong: rgba(11, 11, 12, 0.9);
+  --ink-a90: rgba(11, 11, 12, 0.92);
+  --ink-a60: rgba(11, 11, 12, 0.6);
+  --ink-a20: rgba(11, 11, 12, 0.2);
+  --shade: rgba(0, 0, 0, 0.55);
+  --champ-glow: rgba(212, 190, 141, 0.16);
+  --champ-wash: rgba(212, 190, 141, 0.05);
+  --champ-pulse: rgba(212, 190, 141, 0.45);
+
+  /* Tipografia -------------------------------------------------------- */
+  --font-display: "Bodoni Moda", "Didot", "Times New Roman", serif;
+  --font-text: "Manrope", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  --font-sign: "Mrs Saint Delafield", "Brush Script MT", cursive;
+
+  /* Escala fluida (min → max entre 390px e 1440px) */
+  --fs-xs: 0.75rem;                                   /* 12 — mono, rótulos */
+  --fs-sm: 0.875rem;                                  /* 14 */
+  --fs-base: 1rem;                                    /* 16 */
+  --fs-md: clamp(1.0625rem, 0.98rem + 0.3vw, 1.1875rem); /* 17 → 19 */
+  --fs-lg: clamp(1.375rem, 1.2rem + 0.7vw, 1.75rem);     /* 22 → 28 */
+  --fs-xl: clamp(2rem, 1.5rem + 2vw, 3.25rem);           /* 32 → 52 */
+  --fs-2xl: clamp(2.5rem, 1.6rem + 3.6vw, 4.75rem);      /* 40 → 76 */
+  --fs-3xl: clamp(2.5rem, 1.4rem + 4.6vw, 6rem);         /* 40 → 96 */
+
+  --lh-tight: 1.02;
+  --lh-snug: 1.2;
+  --lh-text: 1.7;
+  --tracking-mono: 0.24em;
+
+  /* Espaçamento (base 8) --------------------------------------------- */
+  --space-1: 0.5rem;   /* 8 */
+  --space-2: 1rem;     /* 16 */
+  --space-3: 1.5rem;   /* 24 */
+  --space-4: 2rem;     /* 32 */
+  --space-5: 3rem;     /* 48 */
+  --space-6: 4rem;     /* 64 */
+  --space-7: 6rem;     /* 96 */
+  --space-8: 8rem;     /* 128 */
+  --section-y: clamp(var(--space-7), 12vw, 10rem);
+
+  /* Layout ------------------------------------------------------------ */
+  --container: 1240px;
+  --gutter: max(20px, env(safe-area-inset-left), env(safe-area-inset-right), 4vw);
+  --measure: 60ch;
+  --nav-h: 84px;
+  --radius: 2px;
+
+  /* Movimento --------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 0.25s;
+  --dur: 0.6s;
+  --dur-slow: 1.1s;
+
+  /* Camadas ----------------------------------------------------------- */
+  --z-content: 1;
+  --z-nav: 50;
+  --z-float: 60;
+  --z-cursor: 90;
+  --z-grain: 95;
+  --z-intro: 100;
+}

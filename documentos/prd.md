@@ -36,7 +36,7 @@
 | Contato (formulário + martelo + canais)             | ✅ Pronto (formulário só demonstração) |
 | Botão flutuante de WhatsApp                         | ✅ Pronto (número fictício)            |
 | Rodapé com aviso de projeto conceitual              | ✅ Pronto                              |
-| Publicação no GitHub Pages                          | ⏳ Pendente                            |
+| Publicação no GitHub Pages                          | ✅ joseandrofilho.github.io/advocacia-harveySpecter |
 | Vídeo para o TikTok                                 | ⏳ Pendente                            |
 
 ---
@@ -272,10 +272,10 @@ Não há build, framework nem npm. É HTML/CSS/JS puro. Se alguma biblioteca nã
 
 **Prioridade alta**
 
-- [ ] Publicar no GitHub Pages (repo `joseandrofilho/specter-associates` ou similar)
+- [x] Publicar no GitHub Pages (repo `joseandrofilho/advocacia-harveySpecter`)
 - [ ] Revisar e ajustar os textos com a voz do Joseandro
 - [x] Favicon com o monograma "S." (SVG)
-- [x] Meta tags Open Graph (imagem de compartilhamento com o hero). Trocar por URL absoluta ao publicar.
+- [x] Meta tags Open Graph (imagem de compartilhamento com o hero). Já com a URL absoluta do GitHub Pages.
 
 **Prioridade média**
 
